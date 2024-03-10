@@ -16,6 +16,16 @@ The above paper takes a review on the global DDos attacks and has put forth a fo
 
 # Developer logs
 
+Setup the virtual environment:
+
+```bash
+pip install virtualenv
+
+python -m venv myenv
+
+myenv\Scripts\activate
+```
+You would now have a (myenv) before the directory mentioned in your terminal pointing out that the environment is virtual.
 
 
 
