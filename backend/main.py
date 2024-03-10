@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pyrasp.pyrasp import FastApiRASP
 
 app = FastAPI()
+
+# Setting up security system
+rasp = FastApiRASP(app, conf='rasp.json')
 
 app.add_middleware(
     CORSMiddleware,

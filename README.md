@@ -27,6 +27,33 @@ myenv\Scripts\activate
 ```
 You would now have a (myenv) before the directory mentioned in your terminal pointing out that the environment is virtual.
 
+## Install FastAPI and Uvicorn
+
+Uvicorn is used for ASGI server implementation.
+
+```bash
+pip install fastapi uvicorn
+```
+
+To run site in developement mode. Reload is used to update site after the code is changed.
+
+```bash
+uvicorn main:app --reload
+```
+
+Open link at:
+```link
+http://127.0.0.1:8000/api/data
+```
+Had setup react app, go to frontend/threat-detector folder and run
+```bash
+npm start
+```
+The data from fastapi will now be directed to react to display.
+
+
+
+
 
 
 
