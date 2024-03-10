@@ -11,6 +11,12 @@ The cybersecurity landscape has evolved a lot over the past few years. We have h
 
 The above paper takes a review on the global DDos attacks and has put forth a forecast of attacks that will occur in 2024-2026 and these attacks are predicted to cause substantial economic damages. The community is aware of the unstable situation we are in and we need to up our AI powered security measures to stand what is coming.
 
+# Architecture Design
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/965a3f41-0e7d-47cd-9df0-37d9b375b11e)
+
+# Developer logs
+
+
 
 
 
