@@ -55,7 +55,20 @@ npm start
 ```
 The data from fastapi will now be directed to react to display.
 
+### To start InfluxDB server
 
+```bash
+cd -Path 'C:\Program Files\InfluxData\influxdb'
+```
+
+```bash
+./influxd
+```
+### To setup Material UI
+
+```bash
+ npm install @mui/material @emotion/react @emotion/styled
+```
 
 
 

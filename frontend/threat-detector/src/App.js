@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CircularProgress, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
 function App() {
   const [data, setData] = useState(null);
@@ -11,13 +12,38 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div style={{ padding: '20px' }}>
       {data ? (
         <div>
-          <p>Message: {data}</p>
+          <h1>Table Data</h1>
+          {data.map((table, index) => (
+            <div key={index} style={{ marginBottom: '20px' }}>
+              <h2>Table {table.table}</h2>
+              <TableContainer component={Paper}>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      {Object.keys(table.values).map((key, index) => (
+                        <TableCell key={index}>{key}</TableCell>
+                      ))}
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    <TableRow>
+                      {Object.values(table.values).map((value, index) => (
+                        <TableCell key={index}>{value}</TableCell>
+                      ))}
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </div>
+          ))}
         </div>
       ) : (
-        <p>Loading... {data}</p>
+        <div style={{ textAlign: 'center' }}>
+          <CircularProgress />
+        </div>
       )}
     </div>
   );
