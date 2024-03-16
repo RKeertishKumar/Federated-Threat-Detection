@@ -22,7 +22,11 @@ Setup the virtual environment:
 pip install virtualenv
 
 python -m venv myenv
+```
 
+### To activate virtual environment
+
+```bash
 myenv\Scripts\activate
 ```
 You would now have a (myenv) before the directory mentioned in your terminal pointing out that the environment is virtual.

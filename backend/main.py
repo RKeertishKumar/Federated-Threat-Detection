@@ -5,7 +5,7 @@ from pyrasp.pyrasp import FastApiRASP
 app = FastAPI()
 
 # Setting up security system
-rasp = FastApiRASP(app, conf='rasp.json')
+#rasp = FastApiRASP(app, conf='rasp.json')
 
 app.add_middleware(
     CORSMiddleware,
