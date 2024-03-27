@@ -72,6 +72,16 @@ cd -Path 'C:\Program Files\InfluxData\influxdb'
 
 ### Setting up federated learning framework
 
+installed flwr
+
+### Dataset info
+
+Took the dataset from
+
+https://www.unb.ca/cic/datasets/ddos-2019.html
+
+
+
 
 
 
