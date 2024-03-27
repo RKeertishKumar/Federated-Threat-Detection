@@ -88,6 +88,13 @@ For example, if you have 1000 samples in your dataset, you might split it as fol
 150 samples for validation (15%)
 150 samples for testing (15%)
 
+### Running the deep learning model
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/7741cdcb-f3db-454a-87d4-6e0129765544)
+
+The accuracy is 77 percent with time taken to train the model being 38 seconds.
+
+
+
 
 
 
