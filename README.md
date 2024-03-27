@@ -80,6 +80,14 @@ Took the dataset from
 
 https://www.unb.ca/cic/datasets/ddos-2019.html
 
+### Splitting dataset into 3 parts
+
+For example, if you have 1000 samples in your dataset, you might split it as follows:
+
+700 samples for training (70%)
+150 samples for validation (15%)
+150 samples for testing (15%)
+
 
 
 
