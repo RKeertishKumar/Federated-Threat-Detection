@@ -156,7 +156,7 @@ Say Y when prompted to continue.
 
 Use Ctrl+C to stop the attack.
 
-Observe the denial of service the website on the local machine due to a lot requests.
+Observe the denial of service on the website on the local machine due to a lot requests.
 
 
 
