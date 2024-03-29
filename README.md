@@ -78,6 +78,9 @@ installed flwr
 
 Took the dataset from
 
+https://data.mendeley.com/datasets/ssnc74xm6r/1
+
+Original source:
 https://www.unb.ca/cic/datasets/ddos-2019.html
 
 ### Splitting dataset into 3 parts
