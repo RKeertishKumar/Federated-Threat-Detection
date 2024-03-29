@@ -93,6 +93,70 @@ For example, if you have 1000 samples in your dataset, you might split it as fol
 
 The accuracy is 77 percent with time taken to train the model being 38 seconds.
 
+### Setting up the attack method for the demo
+
+Using a https://github.com/Ha3MrX/DDos-Attack ddos attack python script file from github.
+
+That didn't work as it needed python 2.x based on the syntax given so we will switch to a different method.
+
+Let's try the one with most stars on the github.
+
+git clone https://github.com/MHProDev/MHDDoS.git
+
+![alt text](image.png)
+
+Failed to build impact with MHDDos tool. Onto next tool.
+
+Raven-storm works for ddos and stress testing after resolving requests module upgrade issue.
+
+https://github.com/Tmpertor/Raven-Storm
+
+### Setting up DEMO
+
+Go to cd DEMO and CD dummysite 
+
+```bash
+python -m http.server 8000
+```
+
+Now go to dummyddos and run
+
+```bash
+python main.py
+```
+
+Decided to use flask web server to limit the resources used to bring about the denial of service to the web page.
+
+Go to dummysite and run
+
+```bash
+python main.py
+```
+To get the webserver running.
+
+Go to DDosA\Raven-Storm and run
+
+```bash
+python main.py
+```
+then go to l7 and set targets
+
+```bash
+targets http://127.0.0.1:5000/, http://127.0.0.1:5000/about, http://127.0.0.1:5000/services, http://127.0.0.1:5000/contact
+```
+Now type run
+
+```bash
+run
+```
+Say Y when prompted to continue.
+
+Use Ctrl+C to stop the attack.
+
+Observe the denial of service the website on the local machine due to a lot requests.
+
+
+
 
 
 
