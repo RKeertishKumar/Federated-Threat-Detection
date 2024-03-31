@@ -216,6 +216,35 @@ nvidia-smi
 ```
 Type the above command in terminal to see the info.
 
+### Using Google Colab to run the GPU computations
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/baf7d9db-320a-4983-b06c-e3dd6f112561)
+
+The time taken using CPU for data processing.
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/ea786b6e-02a6-4b0c-a8ea-b193d3905f33)
+
+After better preprocessing, we have a training time of 223 seconds and accuracy of 98%.
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/942065a7-20ab-4b3a-b83e-8ab7198e9a39)
+
+That was a dud with tensorflow gpu.
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/b0f748a5-0a1f-4f96-b709-b8ef41198c32)
+
+Was able to bring up the accuracy, the training time went down tho.
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/809b75c7-75cb-4407-9046-35f11923720d)
+
+The complex model takes more time and have less accuracy of 77%
+
+![Uploading image.png…]()
+
+This is good. We are increasing the batch size as GPU can handle tho better leading to a quicker trained models. Accuracy is less but the trade off is less training time.
+
+
+
+
 
 
 
