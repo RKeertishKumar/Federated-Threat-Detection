@@ -234,11 +234,9 @@ That was a dud with tensorflow gpu.
 
 Was able to bring up the accuracy, the training time went down tho.
 
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/809b75c7-75cb-4407-9046-35f11923720d)
-
 The complex model takes more time and have less accuracy of 77%
 
-![Uploading image.png…]()
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/809b75c7-75cb-4407-9046-35f11923720d)
 
 This is good. We are increasing the batch size as GPU can handle tho better leading to a quicker trained models. Accuracy is less but the trade off is less training time.
 
