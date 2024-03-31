@@ -256,6 +256,9 @@ Hence, using GPU for processing in distributed deep learning leads to reduced tr
 So, the percentage reduction in training time is approximately 80.72%.
 Also, the decrease in accuracy is 20%. The reason accuracy decreases is because the density of the data decreases, if we take the proper monitoring data sources, the density would remain better and hence better accuracy as a result.
 
+## Prevention using Runtime Application Self Protection
+
+We would at last integrate a RASP module with the modal we have trained on to prevent the attacks from occuring again.
 
 
 
