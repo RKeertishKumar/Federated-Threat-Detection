@@ -1,6 +1,10 @@
 from flask import Flask, render_template
+from pyrasp.pyrasp import FlaskRASP
 
 app = Flask(__name__)
+
+# Use configured RASP
+FlaskRASP(app, conf='rasp.json')
 
 @app.route('/')
 def index():
@@ -19,4 +23,5 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(threaded=False, processes=1)
+    # Run the Flask app on a different IP address (e.g., 192.168.1.100)
+    app.run(host='127.0.0.2', threaded=False, processes=1)

@@ -145,7 +145,7 @@ python main.py
 then go to l7 and set targets
 
 ```bash
-targets http://127.0.0.2:5000/, http://127.0.0.2:5000/about, http://127.0.0.2:5000/services, http://127.0.0.2:5000/contact
+targets http://127.0.0.1:5000/, http://127.0.0.1:5000/about, http://127.0.0.1:5000/services, http://127.0.0.1:5000/contact
 ```
 Now type run
 
@@ -216,50 +216,19 @@ nvidia-smi
 ```
 Type the above command in terminal to see the info.
 
-### Using Google Colab to run the GPU computations
+After incredible amount of fails and nearly trying out every gpu based framework and module to work with the code on my laptop, I turned to a stackoverflow answer which saved me.
 
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/baf7d9db-320a-4983-b06c-e3dd6f112561)
+https://stackoverflow.com/questions/51002045/how-to-make-jupyter-notebook-to-run-on-gpu
 
-The time taken using CPU for data processing.
+https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
 
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/ea786b6e-02a6-4b0c-a8ea-b193d3905f33)
+Use google colab with a GPU setting.
 
-After better preprocessing, we have a training time of 223 seconds and accuracy of 98%.
+### Trying out GPU based computations and time taken on google colab
 
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/942065a7-20ab-4b3a-b83e-8ab7198e9a39)
+![alt text](image-6.png)
 
-That was a dud with tensorflow gpu.
-
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/b0f748a5-0a1f-4f96-b709-b8ef41198c32)
-
-Was able to bring up the accuracy, the training time went down tho.
-
-The complex model takes more time and have less accuracy of 77%
-
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/809b75c7-75cb-4407-9046-35f11923720d)
-
-This is good. We are increasing the batch size as GPU can handle tho better leading to a quicker trained models. Accuracy is less but the trade off is less training time.
-
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/9a9c025c-6d88-4994-aaa6-8e7ff15b02ef)
-
-Increasing the batch size so we can compute even faster.
-
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/5e42e375-836d-48fb-98c4-1242ffc63fde)
-
-Similar results again.
-
-![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/355d875a-5001-4d2a-879a-6bc64f2743ec)
-
-Conclusively, as the data density decreases the accuracy is decreased.
-
-Hence, using GPU for processing in distributed deep learning leads to reduced training time.
-So, the percentage reduction in training time is approximately 80.72%.
-Also, the decrease in accuracy is 20%. The reason accuracy decreases is because the density of the data decreases, if we take the proper monitoring data sources, the density would remain better and hence better accuracy as a result.
-
-## Prevention using Runtime Application Self Protection
-
-We would at last integrate a RASP module with the modal we have trained on to prevent the attacks from occuring again.
-
+GPU is available.
 
 
 

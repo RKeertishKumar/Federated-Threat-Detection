@@ -5,14 +5,20 @@ from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
 import time
 
-# Check if GPU is available
-gpu_devices = tf.config.experimental.list_physical_devices('GPU')
-if gpu_devices:
-    for gpu in gpu_devices:
-        tf.config.experimental.set_memory_growth(gpu, True)
-    print("GPU available. Using GPU for computation.")
-else:
-    print("GPU not available. Using CPU for computation.")
+# Function to check if GPU is available and set memory growth
+def setup_gpu():
+    gpus = tf.config.experimental.list_physical_devices('GPU')
+    if gpus:
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
+        print("GPU available. Using GPU for computation.")
+        return True
+    else:
+        print("GPU not available. Using CPU for computation.")
+        return False
+
+# Check if GPU is available and set memory growth
+use_gpu = setup_gpu()
 
 # Load preprocessed datasets
 X_train = np.loadtxt('X_train_preprocessed.csv', delimiter=',', skiprows=1)
