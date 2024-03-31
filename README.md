@@ -158,6 +158,72 @@ Use Ctrl+C to stop the attack.
 
 Observe the denial of service on the website on the local machine due to a lot requests.
 
+### Building data pipeline to receive data in .csv format
+
+We use wireshark currently to get the data we require in the local environment.
+
+We could use scapy we need ethernet interface data.
+
+we run
+
+```bash
+python capture.py
+```
+
+To get that data.
+
+For wireshark data export data into .csv
+
+The we preprocess that into right tables and calculate some derivative values using
+
+```bash
+python preprocess.py
+```
+
+### Decision tree and random forest to append attack or begnin to row
+
+![alt text](image-1.png)
+
+Here, we have the random forest model with accuracy 99 percent as the data was already arranged well with training time of 23 seconds.
+
+### Simulated federated learning done
+
+![alt text](image-2.png)
+
+Here, this is the total time after every client has run through.
+
+But, what we have to focus on is that all the clients would run parallely rather than sequencially.
+
+![alt text](image-3.png)
+
+This is after using multithreading. We are at 203 seconds.
+
+![alt text](image-4.png)
+
+Here, I just need to find the training time of 1 client and it averages to 10 seconds per client. Significant improvement. Compared to taking 38 seconds on normal deep learning models, we have reduced the training time.
+
+So, the improvement in training time is approximately 
+73.68%
+
+### Setting up GPU drivers and CUDA
+
+![alt text](image-5.png)
+
+Have cuda on my system to use for AI computations after os incompatibility issues.
+
+```bash
+nvidia-smi
+```
+Type the above command in terminal to see the info.
+
+
+
+
+
+
+
+
+
 
 
 
