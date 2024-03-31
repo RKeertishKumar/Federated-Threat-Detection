@@ -240,6 +240,23 @@ The complex model takes more time and have less accuracy of 77%
 
 This is good. We are increasing the batch size as GPU can handle tho better leading to a quicker trained models. Accuracy is less but the trade off is less training time.
 
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/9a9c025c-6d88-4994-aaa6-8e7ff15b02ef)
+
+Increasing the batch size so we can compute even faster.
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/5e42e375-836d-48fb-98c4-1242ffc63fde)
+
+Similar results again.
+
+![image](https://github.com/RKeertishKumar/Federated-Threat-Detection/assets/141417594/355d875a-5001-4d2a-879a-6bc64f2743ec)
+
+Conclusively, as the data density decreases the accuracy is decreased.
+
+Hence, using GPU for processing in distributed deep learning leads to reduced training time.
+So, the percentage reduction in training time is approximately 80.72%.
+Also, the decrease in accuracy is 20%. The reason accuracy decreases is because the density of the data decreases, if we take the proper monitoring data sources, the density would remain better and hence better accuracy as a result.
+
+
 
 
 
